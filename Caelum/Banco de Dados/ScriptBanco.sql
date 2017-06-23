@@ -1,3 +1,4 @@
+-- criando banco
 create database fj21;
 
 -- Ultilizar o banco de dados
