@@ -13,9 +13,9 @@ public class TesteContato {
 		// pronto para gravar
 		Contato contato = new Contato();
 		
-		contato.setNome("Caelum");
+		contato.setNome("teste");
 		contato.setEmail("contato@caelum.com.br");
-		contato.setEndereco("R. Vergueiro 3185 cj57");
+		contato.setEndereco("R. ZE");
 		contato.setDataNascimento(Calendar.getInstance());
 		
 		// grave nessa conexão!!!

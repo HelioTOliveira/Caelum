@@ -1,4 +1,4 @@
-package br.com.caelum.jdbc.dao;
+package br.com.caelum.jdbc.modelo;
 
 public class Funcionario {
 

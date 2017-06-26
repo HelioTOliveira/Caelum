@@ -59,7 +59,7 @@ public class ContatoDAO {
 				// criando o objeto Contato
 				Contato contato = new Contato();
 				
-				contato.setId(rs.getLong("id"));
+				contato.setId(rs.getInt("id"));
 				contato.setNome(rs.getString("nome"));
 				contato.setEmail(rs.getString("email"));
 				contato.setEndereco(rs.getString("endereco"));
@@ -110,9 +110,9 @@ public class ContatoDAO {
 	public void remove (Contato contato){
 		
 		try {
-			PreparedStatement smtm = connection.prepareStatement("delete from contatos where id=?");
+			PreparedStatement smtm = this.connection.prepareStatement("delete from contatos where id=?");
 			
-			smtm.setLong(1, contato.getId());
+			smtm.setInt(1, contato.getId());
 			smtm.executeQuery();
 			smtm.close();
 			
